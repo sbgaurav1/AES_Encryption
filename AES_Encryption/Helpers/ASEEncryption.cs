@@ -47,7 +47,7 @@ namespace AES_Encryption.Helpers
                     // Encrypt string    
                     byte[] encrypted = Encrypt(raw, aes.Key, aes.IV);
                     // Return encrypted string    
-                    return $"Encrypted data: {System.Text.Encoding.UTF8.GetString(encrypted)}";
+                    return $"{System.Text.Encoding.UTF8.GetString(encrypted)}";
                 }
             }
             catch (Exception)
